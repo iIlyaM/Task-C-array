@@ -17,7 +17,10 @@ int main() {
         duplicateArr[2 * i] = arr[i];
         duplicateArr[2 * i + 1] = arr[i];
     }
-    cout<<duplicateArr<<endl;
+    
+    for(int i = 0; i <2 * N; i++) {
+        cout<< duplicateArr[i]<<" ";
+    }
     cout<< endl;
 
     
