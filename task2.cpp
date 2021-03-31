@@ -20,7 +20,9 @@ int main() {
         duplicateArr[2 * i + 1] = arr[i];
     }
     
-    cin.ignore();
+    cin.clear();
+    cin.ignore(255, '\n');
+    
     
     for(int i = 0; i <2 * N; i++) {
         cout<< duplicateArr[i]<<" ";
