@@ -11,12 +11,16 @@ int main() {
     cin>>N;
     char *arr = new char[N];
     char *duplicateArr = new char[2*N];
+    
+    cout<<"Enter elements: "<< endl;
 
     for(int i = 0; i < N; ++i) {
         cin >> arr[i];
         duplicateArr[2 * i] = arr[i];
         duplicateArr[2 * i + 1] = arr[i];
     }
+    
+    cin.ignore();
     
     for(int i = 0; i <2 * N; i++) {
         cout<< duplicateArr[i]<<" ";
